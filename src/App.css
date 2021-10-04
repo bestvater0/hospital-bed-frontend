@@ -1,38 +1,60 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: left;
+  font-size: 30px;
   color: white;
+  text-shadow: 0 0 9px #fff; 
+  padding: 0px 0px 0px 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thumb {
+  cursor: pointer;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: 5px solid #282c34;
+  border-radius: 10%;
+  display: block;
+}
+
+.thumb.active {
+  background-color: #bfbfbf;
+}
+
+.track {
+  position: relative;
+  background: black;
+}
+
+.vertial-slider .track {
+  top: 20px;
+  height: 4px;
+}
+
+.vertical-slider {
+  max-width: 4rem;
+  border: 5px solid #282c34;
+  height: 10rem; 
+  width: 60%;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 3%;
+}
+
+.paddedContainer {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.container {
+  padding: 1rem 1rem 1rem 1rem;
 }
